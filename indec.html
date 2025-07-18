@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Muneeswari | My First DevOps Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #0077cc;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .code-box {
+      background: #eee;
+      padding: 10px;
+      font-family: monospace;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    .list-columns {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .list-columns ul {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hello, I'm Muneeswari 👩‍💻</h1>
+    <p>Welcome to My First DevOps Project Using GitHub and Linux</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#linux">Linux Commands</a>
+    <a href="#git">Git Commands</a>
+    <a href="#skills">Skills</a>
+    <a href="#thanks">Thanks</a>
+  </nav>
+
+  <section id="about">
+    <div class="card">
+      <h2>📝 About This Project</h2>
+      <p>This project is a simple static website hosted with <span class="highlight">GitHub Pages</span>. It's my very first step in the world of <span class="highlight">DevOps</span> and version control systems like <span class="highlight">Git</span>.</p>
+      <p>The purpose of this project is to help me understand the basics of:</p>
+      <ul>
+        <li>Using Linux terminal</li>
+        <li>Managing files and folders</li>
+        <li>Git version control system</li>
+        <li>Hosting code on GitHub</li>
+        <li>Deploying a static website</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="linux">
+    <div class="card">
+      <h2>💻 Linux Commands I Practiced</h2>
+      <div class="list-columns">
+        <ul>
+          <li><code>cd</code> – Change directory</li>
+          <li><code>ls</code> – List files and directories</li>
+          <li><code>mkdir</code> – Create a new folder</li>
+          <li><code>touch</code> – Create a file</li>
+          <li><code>mv</code> – Move/rename a file</li>
+        </ul>
+        <ul>
+          <li><code>cp</code> – Copy files</li>
+          <li><code>rm</code> – Delete files</li>
+          <li><code>clear</code> – Clear terminal screen</li>
+          <li><code>pwd</code> – Print current directory</li>
+          <li><code>echo</code> – Print message</li>
+        </ul>
+      </div>
+      <p>Practicing these commands helped me become comfortable navigating and managing files from the command line.</p>
+    </div>
+  </section>
+
+  <section id="git">
+    <div class="card">
+      <h2>🔧 Git Commands Used</h2>
+      <ul>
+        <li><code>git init</code> – Initialize a new Git repository</li>
+        <li><code>git add .</code> – Add all changes to staging</li>
+        <li><code>git commit -m "Initial commit"</code> – Commit with a message</li>
+        <li><code>git remote add origin &lt;repo-url&gt;</code> – Link local repo with GitHub</li>
+        <li><code>git push -u origin main</code> – Push to main branch</li>
+      </ul>
+      <p>These commands are essential for source code management and collaborating with others.</p>
+    </div>
+  </section>
+
+  <section id="steps">
+    <div class="card">
+      <h2>🛠️ Steps to Deploy the Website</h2>
+      <ol>
+        <li>Create an HTML file and folder structure</li>
+        <li>Initialize Git using <code>git init</code></li>
+        <li>Push the code to GitHub</li>
+        <li>Go to Settings → Pages → Deploy</li>
+        <li>Your site is live on <code>https://username.github.io/repo/</code></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="card">
+      <h2>📚 Skills I'm Practicing</h2>
+      <ul>
+        <li>Command Line Navigation</li>
+        <li>Git and GitHub Version Control</li>
+        <li>Static Web Hosting</li>
+        <li>Basic HTML and CSS</li>
+        <li>Project Documentation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="project-code">
+    <div class="card">
+      <h2>🧾 Sample Code Snippets</h2>
+      <p>Git Commands:</p>
+      <div class="code-box">
+<pre>
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/myname/devops-project.git
+git push -u origin main
+</pre>
+      </div>
+      <p>Linux Commands:</p>
+      <div class="code-box">
+<pre>
+mkdir my-devops-project
+cd my-devops-project
+touch index.html
+nano index.html
+</pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="thanks">
+    <div class="card">
+      <h2>🙏 Thank You</h2>
+      <p>If you’re reading this, you’ve just visited my very first deployed DevOps project!</p>
+      <p>I’m excited to keep learning, building, and sharing my journey step by step. Stay tuned for more projects and improvements!</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 P. Muneeswari | Python Developer | DevOps Learner</p>
+    <p>GitHub: <a href="https://github.com/yourusername" style="color: #4dd0e1;">@yourusername</a></p>
+  </footer>
+
+</body>
+</html>
